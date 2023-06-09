@@ -51,7 +51,7 @@ function handleWrongGuess(guess) {
     displayMessage('.message', 'Game Over 🎮');
     document.querySelector('.score').textContent = 0;
     gameOver = true;
-    document.querySelector('.guess').disabled = true;
+    document.querySelector('.guess').disabled = false;
     gameOverAudio.play();
   }
 }
