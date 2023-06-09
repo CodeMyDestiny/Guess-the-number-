@@ -50,6 +50,8 @@ function handleWrongGuess(guess) {
   if (score === 0) {
     displayMessage('.message', 'Game Over 🎮');
     document.querySelector('.score').textContent = 0;
+    gameOver = true;
+    document.querySelector('.guess').disabled = true;
     gameOverAudio.play();
   }
 }
